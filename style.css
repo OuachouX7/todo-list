@@ -1,9 +1,12 @@
+body{
+    margin: 0;
+}
 form{
     display: flex;
     justify-content: space-evenly;
 }
 .container{
-    height: 200px;
+    height: 720px;
     background-color: #eee;
     display: flex;
     flex-direction: column;
@@ -12,6 +15,7 @@ form{
 input[type=text]{
     width: 70%;
     border-radius: 10px;
+    background-color: #eee;
     height: 50px;
 }
 h1{
@@ -24,4 +28,22 @@ input[type=reset]{
     height: 50px;
     color: white;
     background-color: rgb(191, 22, 22);
+}
+.line-through{
+    text-decoration: line-through;
+    
+}
+#tasks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.completed{
+    background-color: greenyellow;
 }

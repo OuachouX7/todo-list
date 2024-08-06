@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="title">
 
             <h1>ToDo List</h1>
@@ -19,6 +20,10 @@
                 <input type="submit" id="sub" value="Add Task">
                 <input type="reset">
             </form>
+            
+        </div>
+        <div class="tasks" id="tasks-container">
+            <div id="tasks"></div>
         </div>
     </div>
     <script src="main.js"></script>
