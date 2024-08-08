@@ -6,7 +6,7 @@ form{
     justify-content: space-evenly;
 }
 .container{
-    height: 720px;
+    height: 740px;
     background-color: #eee;
     display: flex;
     flex-direction: column;
@@ -17,6 +17,9 @@ input[type=text]{
     border-radius: 10px;
     background-color: #eee;
     height: 50px;
+}
+input[type=text]:focus{
+    border: 3px solid purple;
 }
 h1{
     text-align: center;
@@ -46,4 +49,20 @@ input[type=reset]{
 }
 .completed{
     background-color: greenyellow;
+}
+.task-container{
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+@keyframes move {
+    0%{
+        transform: translateX(-170px);
+    }
+    50%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }

@@ -51,6 +51,8 @@ function submit(event){
     div.style.alignItems = 'center';
     div.style.margin = '15px 0';
 
+    div.classList.add('the-container');
+
     div.appendChild(done);
     div.appendChild(para);
     div.appendChild(span);
